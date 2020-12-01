@@ -60,6 +60,7 @@ const App = () => {
       saves = [currentGrid]
     }
     window.localStorage.setItem('saves',JSON.stringify(saves))
+    setSavedSeeds(saves)
   },[])
  
 
@@ -158,6 +159,7 @@ const App = () => {
       <button
           onClick={() => {
            window.localStorage.clear()
+           setSavedSeeds([])
           }}
         >
           clear seeds

@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const SeedList = React.memo(({ savedSeeds }) => {
 //   console.log('render')
 //   console.log(savedSeeds)
@@ -18,6 +17,8 @@ const SeedList = React.memo(({ savedSeeds }) => {
                 float:'left',
                 display: 'grid',
                 gridTemplateColumns: `repeat(${grid.length},4px)`,
+                transform: 'translate(10px, 10px)',
+
               }}
             >
               {grid.map((rows, i) =>
